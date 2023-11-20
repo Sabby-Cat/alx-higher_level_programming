@@ -11,17 +11,3 @@ def magic_calculation(a, b):
             result = b + a
             break
         return result
-
-
-
-
-    
-        try:
-            if (i > a):
-                raise (Exception('Too far'))
-            else:
-                result = (((a ** b) / i) + result)
-        except (Exception):
-            result = (b + a)
-            break
-    return (result)
