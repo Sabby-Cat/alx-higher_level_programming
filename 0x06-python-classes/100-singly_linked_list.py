@@ -5,7 +5,7 @@ class Node:
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
-        
+
     @property
     def data(self):
         return self.__data
@@ -18,7 +18,7 @@ class Node:
             raise TypeError("data must be an integer")
 
     @property
-    def next_node(self): 
+    def next_node(self):
         return self.__next_node
 
     @next_node.setter
@@ -41,7 +41,7 @@ class SinglyLinkedList:
             while node.next_node is not None and node.next_node.data < value:
                 node = node.next_node
             node.next_node = Node(value, node.next_node)
-        
+
     def __str__(self):
         ret = ""
         node = self.__head
@@ -49,4 +49,3 @@ class SinglyLinkedList:
             ret += str(node.data) + '\n'
             node = node.next_node
         return ret[:-1]
-    
