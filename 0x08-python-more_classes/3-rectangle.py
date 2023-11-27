@@ -49,6 +49,6 @@ class Rectangle:
     def __str__(self):
         """returns readable string"""
         ret = ""
-        for i in range(self.__height):
+        for i in range(self.__height - 1):
             ret += "#" * self.__width + "\n"
-        return ret
+        return ret + "#" * self.__width
