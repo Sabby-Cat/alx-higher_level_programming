@@ -1,8 +1,14 @@
 #!/usr/bin/python3
-"""add int"""
+"""
+file for function
+to add 2 nrs together
+raising errors if not possible
+"""
 
 def add_integer(a, b=98):
-    """adds 2 ints"""
+    """
+    adds 2 ints together 
+    """
     if type(a) is not float and type(a) is not int:
         raise TypeError("a must be an integer")
     if type(b) is not float and type(b) is not int:
