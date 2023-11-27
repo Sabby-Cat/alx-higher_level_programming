@@ -18,6 +18,7 @@ if __name__ == "__main__":
         print("N must be at least 4")
         exit(1)
 
+    """for loop"""
     for i in range(n):
         ret.append([i, None])
 
@@ -55,4 +56,5 @@ if __name__ == "__main__":
                 else:
                     nqueens(x + 1)
 
+    """calls function"""
     nqueens(0)
