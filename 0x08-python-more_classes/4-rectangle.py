@@ -13,7 +13,7 @@ class Rectangle:
     def width(self):
         """width get/set"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if type(value) is not int:
