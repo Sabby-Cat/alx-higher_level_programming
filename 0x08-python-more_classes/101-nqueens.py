@@ -36,10 +36,10 @@ if __name__ == "__main__":
 
     def check(x, y):
         """checks if solution is usable"""
-        if (exists(y)):
+        if exists(y):
             return False
         i = 0
-        while(i < x):
+        while i < x:
             if abs(ret[i][1] - y) == abs(i - x):
                 return False
             i += 1
@@ -51,7 +51,7 @@ if __name__ == "__main__":
             clear_ret(x)
             if check(x, y):
                 ret[x][1] = y
-                if (x == n - 1):
+                if x == n - 1:
                     print(ret)
                 else:
                     nqueens(x + 1)
