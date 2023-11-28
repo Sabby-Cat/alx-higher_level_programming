@@ -17,6 +17,26 @@ Checking for function docstring:
          >>> len(f) > 1
          True
 
+Checking for multiple spaces:
+	 >>> text_indentation("   Hello.  How are you?   ")
+	 Hello.
+	 <BLANKLINE>
+	 How are you?
+	 <BLANKLINE>
+
+Checking for standalone special chars:
+	 >>> text_indentation(" . ? : ")
+	 .
+	 <BLANKLINE>
+	 ?
+	 <BLANKLINE>
+	 :
+	 <BLANKLINE>
+
+Checking for one word:
+	 >>> text_indentation("Hello")
+	 Hello
+
 Checking for no args:
 	 >>> text_indentation()
 	 Traceback (most recent call last):
@@ -101,26 +121,6 @@ Checking for ending in non-special char:
          Quae animi affectio suum cuique tribuens atque hanc, quam dico.
          <BLANKLINE>
          Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
-
-Checking for multiple spaces:
-	 >>> text_indentation("   Hello.  How are you?   ")
-	 Hello.
-	 <BLANKLINE>
-	 How are you?
-	 <BLANKLINE>
-
-Checking for standalone special chars:
-	 >>> text_indentation(" . ? : ")
-	 .
-	 <BLANKLINE>
-	 ?
-	 <BLANKLINE>
-	 :
-	 <BLANKLINE>
-
-Checking for one word:
-	 >>> text_indentation("Hello")
-	 Hello
 
 Checking for newline at beginning:
 	 >>> text_indentation(" \n Hello. Whatcha up to?")

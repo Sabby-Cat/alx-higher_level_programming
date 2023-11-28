@@ -8,7 +8,7 @@ raising errors if not possible
 
 def add_integer(a, b=98):
     """
-    adds 2 ints together 
+    adds 2 ints together
     """
     if type(a) is not float and type(a) is not int:
         raise TypeError("a must be an integer")

@@ -2,7 +2,7 @@ The ``0-add_integer`` module
 ======================
 
 Using ``add_integer``
--------------------
+======================
 
 Importing the function from the module:
 	>>> add_integer = __import__("0-add_integer").add_integer
@@ -74,6 +74,7 @@ Checking number with bool:
          Traceback (most recent call last):
          ...
          TypeError: b must be an integer
+
 Checking both float:
 	 >>> add_integer(2.45, 3.1)
 	 5

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""defines function tesxt indent"""
+"""defines function text indent"""
 
 
 def text_indentation(text):
@@ -7,16 +7,16 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
     c = 0
-    for l in text:
+    for le in text:
         if c == 0:
-            if l == ' ':
+            if le == ' ':
                 continue
             else:
                 c = 1
         if c == 1:
-            if l == ':' or l == '.' or l == '?':
-                print(l)
+            if le == ':' or le == '.' or le == '?':
+                print(le)
                 print()
                 c = 0
             else:
-                print(l, end="")
+                print(le, end="")
