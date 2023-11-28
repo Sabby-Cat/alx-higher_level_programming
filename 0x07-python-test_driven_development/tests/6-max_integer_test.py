@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-Unittest for max_integer([..])
+"""Unittest for max_integer([..])
 """
 import unittest
 max_integer = __import__('6-max_integer').max_integer
@@ -42,7 +41,7 @@ class TestMaxInteger(unittest.TestCase):
         string = [1, 2, "Hello", 4, 5]
         with self.assertRaises(TypeError):
             max_integer(string)
-    
+
     def test_positive_end(self):
         """Tests for all positive with max at end"""
         e = [2, 10, 8, 36, 14, 50]
@@ -67,6 +66,7 @@ class TestMaxInteger(unittest.TestCase):
         """Tests for list with all negative numbers"""
         n = [-6, -50, -75, -1, -100]
         self.assertEqual(max_integer(n), -1)
+
 
 if __name__ == "__main__":
     unittest.main()
