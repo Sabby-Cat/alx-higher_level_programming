@@ -23,7 +23,6 @@ def matrix_divided(matrix, div):
             raise TypeError("Each row of the matrix must have the same size")
         for c in r:
             if type(c) is not int and type(c) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) of \
-                                integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     return [[round(c / div, 2) for c in r] for r in matrix]
