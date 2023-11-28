@@ -5,6 +5,7 @@ to add 2 nrs together
 raising errors if not possible
 """
 
+
 def add_integer(a, b=98):
     """
     adds 2 ints together 
