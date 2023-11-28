@@ -18,12 +18,12 @@ Checking for function docstring:
          True
 
 Checking regular addition:
-	 >>> add_integer(2, 3)
-	 5
+	 >>> add_integer(1, 5)
+	 6
 
 Checking positive with negative:
-	 >>> add_integer(2, -4)
-	 -2
+	 >>> add_integer(2, -6)
+	 -4
 
 Checking negative with positive:
 	 >>> add_integer(-6, 8)
@@ -34,28 +34,12 @@ Checking addition over multiple values:
 	 [0, 2, 6, 12, 20, 30]
 
 Checking float with int:
-	 >>> add_integer(2.1, 4)
+	 >>> add_integer(2.4, 4)
 	 6
 
 Checking int with float:
 	 >>> add_integer(5, 7.8)
 	 12
-
-Checking both float:
-	 >>> add_integer(2.45, 3.1)
-	 5
-
-Checking for passed NaN:
-	 >>> add_integer(1, float('nan'))
-	 Traceback (most recent call last):
-	 ...
-	 ValueError: cannot convert float NaN to integer
-
-Checking for passed inf:
-	 >>> add_integer(1, float('inf'))
-	 Traceback (most recent call last):
-	 ...
-	 OverflowError: cannot convert float infinity to integer
 
 Checking super long int:
 	 >>> add_integer(999999999999999999999999999999, 1)
@@ -90,6 +74,21 @@ Checking number with bool:
          Traceback (most recent call last):
          ...
          TypeError: b must be an integer
+Checking both float:
+	 >>> add_integer(2.45, 3.1)
+	 5
+
+Checking for passed NaN:
+	 >>> add_integer(1, float('nan'))
+	 Traceback (most recent call last):
+	 ...
+	 ValueError: cannot convert float NaN to integer
+
+Checking for passed inf:
+	 >>> add_integer(1, float('inf'))
+	 Traceback (most recent call last):
+	 ...
+	 OverflowError: cannot convert float infinity to integer
 
 Checking no args:
 	 >>> add_integer()

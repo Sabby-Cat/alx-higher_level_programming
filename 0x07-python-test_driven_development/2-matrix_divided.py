@@ -20,7 +20,7 @@ def matrix_divided(matrix, div):
         if l is None:
             l = len(r)
         elif l != len(r):
-            raise TypeError("Each row of the matrix must have the same l")
+            raise TypeError("Each row of the matrix must have the same size")
         for c in r:
             if type(c) is not int and type(c) is not float:
                 raise TypeError("matrix must be a matrix (list of lists) of \
