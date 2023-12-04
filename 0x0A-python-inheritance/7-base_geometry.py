@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """create class BaseGeometry"""
 
 
@@ -7,7 +7,7 @@ class BaseGeometry:
     def area(sel):
         """raises exept"""
         raise Exception("area() is not implemented")
-    
+
     def integer_validator(self, name, value):
         """checks if valid value"""
         if type(value) is not int:
