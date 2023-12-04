@@ -2,7 +2,7 @@ The ``1-my_list`` module
 ======================
 
 Using ``MyList``
-=====================
+-------------------
 
 Importing the function from the module:
         >>> MyList = __import__("1-my_list").MyList
@@ -56,6 +56,16 @@ Checking for reverse order list:
 	 >>> print(l)
 	 [4, 3, 2, 1]
 
+Checking for one neg num:
+	 >>> l.append(-1)
+	 >>> l.append(5)
+	 >>> print(l)
+	 [4, 3, 2, 1, -1, 5]
+	 >>> l.print_sorted()
+	 [-1, 1, 2, 3, 4, 5]
+	 >>> print(l)
+	 [4, 3, 2, 1, -1, 5]
+
 Checking for all neg nums:
 	 >>> l = MyList()
 	 >>> l.append(-10)
@@ -69,16 +79,6 @@ Checking for all neg nums:
 	 [-10, -8, -7, -2, -1]
 	 >>> print(l)
          [-10, -1, -7, -2, -8]
-
-Checking for one neg num:
-	 >>> l.append(-1)
-	 >>> l.append(5)
-	 >>> print(l)
-	 [4, 3, 2, 1, -1, 5]
-	 >>> l.print_sorted()
-	 [-1, 1, 2, 3, 4, 5]
-	 >>> print(l)
-	 [4, 3, 2, 1, -1, 5]
 
 Checking for too many args:
 	 >>> l.print_sorted(1)
