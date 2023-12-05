@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Add args to list and save to file"""
 import sys
+import json
 
 if __name__ == "__main__":
     save_to = __import__('5-save_to_json_file').save_to_json_file
