@@ -91,7 +91,7 @@ class Base:
                     fnm = ["id", "size", "x", "y"]
                 dict_list = csv.DictReader(csvfile, fnm=fnm)
                 dict_list = [dict([k, int(v)] for k, v in i.items())
-                              for i in dict_list]
+                             for i in dict_list]
                 return [cls.create(**i) for i in dict_list]
         except IOError:
             return []

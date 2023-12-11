@@ -79,8 +79,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """return string formart of rect"""
-        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id, \
-self.__x, self.__y, self.__width, self.__height)
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id,
+                                                self.__x, self.__y,
+                                                self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """assigns key/values to attr"""
@@ -98,7 +99,7 @@ self.__x, self.__y, self.__width, self.__height)
             pass
 
     def to_dictionary(self):
-        """return dict \epr of a rect"""
+        """return dict repr of a rect"""
         return {'x': getattr(self, "x"), 'y': getattr(self, "y"),
                 'id': getattr(self, "id"), 'height': getattr(self, "height"),
                 'width': getattr(self, "width")}

@@ -39,8 +39,9 @@ class Square(Rectangle):
 
     def __str__(self):
         """str func"""
-        return "[{}] ({}) {}/{} - {}".format(type(self).__name__,\
-self.id, self.x, self.y, self.width)
+        return "[{}] ({}) {}/{} - {}".format(type(self).__name__,
+                                             self.id, self.x,
+                                             self.y, self.width)
 
     def to_dictionary(self):
         """Return dict repr of Square"""
