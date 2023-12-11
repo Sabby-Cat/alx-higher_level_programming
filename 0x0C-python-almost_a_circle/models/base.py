@@ -96,7 +96,8 @@ class Base:
                 return [cls.create(**i) for i in dict_list]
         except IOError:
             return []
-        
+
+    @staticmethod
     def draw(list_rectangles, list_squares):
         """Draw Rects and Squares using turtle mod"""
         turt = turtle.Turtle()
