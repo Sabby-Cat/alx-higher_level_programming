@@ -101,8 +101,8 @@ class Base:
     def draw(list_rectangles, list_squares):
         """Draw Rects and Squares using turtle mod"""
         turt = turtle.Turtle()
-        turt.screen.bgcolor("#808080")
-        turt.pensize(3)
+        turt.screen.bgcolor("#006400")
+        turt.pensize(4)
         turt.shape("arrow")
         turt.color("#8B008B")
         for rec in list_rectangles:
