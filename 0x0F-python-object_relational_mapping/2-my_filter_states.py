@@ -11,7 +11,7 @@ if __name__ == "__main__":
     sto.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
                 .format(sys.argv[4]))
     lines = sto.fetchall()
-    for l in lines:
-        print(l)
+    for li in lines:
+        print(li)
     sto.close()
     db.close()

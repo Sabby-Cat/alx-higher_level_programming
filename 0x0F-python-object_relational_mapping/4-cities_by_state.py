@@ -11,7 +11,7 @@ if __name__ == "__main__":
     sto.execute("""SELECT cities.id, cities.name, states.name FROM
                 cities INNER JOIN states ON states.id=cities.state_id""")
     lines = sto.fetchall()
-    for l in lines:
-        print(l)
+    for li in lines:
+        print(li)
     sto.close()
     db.close()

@@ -12,7 +12,7 @@ if __name__ == "__main__":
                 cities INNER JOIN states ON states.id=cities.state_id
                 WHERE states.name=%s""", (sys.argv[4],))
     lines = sto.fetchall()
-    tmp = list(l[0] for l in lines)
+    tmp = list(li[0] for li in lines)
     print(*tmp, sep=", ")
     sto.close()
     db.close()

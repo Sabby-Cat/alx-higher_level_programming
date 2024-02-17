@@ -10,7 +10,7 @@ if __name__ == "__main__":
     sto = db.cursor()
     sto.execute("SELECT * FROM states")
     lines = sto.fetchall()
-    for l in lines:
-        print(l)
+    for li in lines:
+        print(li)
     sto.close()
     db.close()
