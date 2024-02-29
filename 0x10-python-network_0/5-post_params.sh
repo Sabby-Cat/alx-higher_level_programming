@@ -1,3 +1,3 @@
 #!/bin/bash
-# send POST method data
-curl -s -X POST -d 'email=test@gmail.com&subject=I will always be here for PLD' $1i
+# send POST method datas
+curl -sL -X POST -d "email=test@gmail.com&subject=I will always be here for PLD" "$1"
