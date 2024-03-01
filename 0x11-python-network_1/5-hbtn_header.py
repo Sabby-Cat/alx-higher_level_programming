@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Python script send request to URL and display value of var in response header"""
+"""Python script send request to URL and display 
+value of var in response header"""
 import requests
 import sys
 
