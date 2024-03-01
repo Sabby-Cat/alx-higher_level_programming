@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script take GitHub credentials and uses 
+"""Python script take GitHub credentials and uses
 GitHub API to display user id"""
 from requests import get, auth
 import sys
